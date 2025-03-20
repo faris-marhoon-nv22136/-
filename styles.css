@@ -68,6 +68,8 @@ h2 {
 .hero-banner img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .hero-content {
@@ -294,16 +296,27 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .hero {
+        height: 70vh;
+    }
+
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
+    }
+
+    .hero .cta-button {
+        font-size: 1rem;
+        padding: 1rem 2rem;
     }
 
     .problem-content {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
 
     .goals-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
 
     .section {
@@ -317,6 +330,73 @@ footer {
 
     .social-content {
         padding: 1.5rem;
+    }
+
+    .qr-code img {
+        max-width: 150px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .goal-card {
+        padding: 1.5rem;
+    }
+
+    .goal-card i {
+        font-size: 2rem;
+    }
+
+    .counter-number {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: 60vh;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero .cta-button {
+        padding: 0.8rem 1.5rem;
+    }
+
+    .section {
+        padding: 2rem 1rem;
+    }
+
+    .counter {
+        padding: 1.5rem;
+    }
+
+    .counter-number {
+        font-size: 2rem;
+    }
+
+    .goal-card {
+        padding: 1.2rem;
+    }
+
+    .goal-card i {
+        font-size: 1.8rem;
+    }
+
+    .social-icon {
+        font-size: 2rem;
+    }
+
+    .qr-code {
+        padding: 1.5rem;
+    }
+
+    .qr-code img {
+        max-width: 120px;
     }
 }
 
